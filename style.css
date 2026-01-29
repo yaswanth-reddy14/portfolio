@@ -1,0 +1,261 @@
+/* =========================
+   RESET & ROOT
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #020617;
+  --bg-soft: #020617;
+  --border: #1e293b;
+  --text-main: #e5e7eb;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Ubuntu, sans-serif;
+  background: radial-gradient(circle at top, #020617 0%, #020617 45%, #000 100%);
+  color: var(--text-main);
+  line-height: 1.65;
+  padding: 0 10px;
+}
+
+/* =========================
+   GLOBAL ANIMATIONS
+========================= */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underlineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 64px;
+  }
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 20px 80px;
+  text-align: center;
+  animation: fadeSlide 0.9s ease forwards;
+}
+
+.hero h1 {
+  font-size: 2.9rem;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+
+.hero .subtitle {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* =========================
+   LINKS / BUTTONS
+========================= */
+.links {
+  margin-top: 28px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+/* =========================
+   SECTIONS (STRUCTURE)
+========================= */
+.section {
+  padding: 70px 0;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px 60px;
+  border-top: 1px solid var(--border);
+  animation: fadeSlide 0.7s ease forwards;
+}
+
+/* =========================
+   SECTION TITLES (MASTER)
+========================= */
+.section-inner h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 34px;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+.section-inner h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  height: 3px;
+  width: 64px;
+  background: linear-gradient(
+    90deg,
+    var(--accent),
+    rgba(56, 189, 248, 0.2)
+  );
+  border-radius: 3px;
+  animation: underlineGrow 0.6s ease forwards;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-grid span {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skills-grid span:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+/* =========================
+   CARDS (PROJECTS / EXPERIENCE)
+========================= */
+.card {
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px 28px;
+  margin-bottom: 26px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card p,
+.card li {
+  color: #cbd5e1;
+}
+
+.card ul {
+  margin-top: 14px;
+  padding-left: 18px;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+  
+   META / STATUS
+========================= */
+.status {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.cert-card {
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.cert-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.cert-card .issuer {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  animation: fadeSlide 0.8s ease forwards;
+}
