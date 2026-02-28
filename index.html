@@ -1,161 +1,898 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dondeti Yaswanth Reddy | Web Developer</title>
+  <title>Yaswanth Reddy Dondeti | Full-Stack Intern Portfolio</title>
+  <meta name="description" content="Full-Stack Intern portfolio of Dondeti Yaswanth Reddy: React, Node.js, Express, MongoDB, and cloud-based projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="noise"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="spotlight"></div>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Dondeti Yaswanth Reddy</h1>
-    <p class="subtitle">B.Tech CSE Student | Full-Stack Web Developer</p>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"><span id="scrollBar"></span></div>
 
-    <div class="links">
-      <a href="https://github.com/yaswanth-reddy14" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/yaswanthreddy-dondeti-b92625264/" target="_blank">LinkedIn</a>
-      <a href="mailto:reddyyaswanth1559@gmail.com">Email</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home">Yaswanth Reddy</a>
+      <nav>
+        <a href="#value">Value</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="topbar-tools">
+        <div class="availability-badge" id="availabilityBadge" title="Current availability (IST)">
+          <span class="availability-dot"></span>
+          <span class="availability-label" id="availabilityLabel">Open to Internship & Full-Time Roles</span>
+          <span class="availability-time" id="availabilityTime">IST --:--</span>
+        </div>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">Light</button>
+      </div>
     </div>
   </header>
 
-  <!-- SKILLS -->
-  <section class="section">
-    <div class="section-inner">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <span>C++</span>
-        <span>Python</span>
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JavaScript</span>
-        <span>React.js</span>
-        <span>Node.js</span>
-        <span>MongoDB</span>
-        <span>MySQL</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>Postman</span>
-      </div>
-    </div>
-  </section>
-  <!-- PROJECTS -->
-  <section class="section">
-    <div class="section-inner">
-      <h2>Projects</h2>
-
-      <div class="card">
-        <h3>Mess Directory (Mess Cards) Web Application</h3>
-        <p>
-          A centralized full-stack web platform designed to help students living in hostels or rented
-          accommodations find affordable and reliable mess services near their educational institutions.
-        </p>
-        <ul>
-          <li>Directory of nearby mess services with contact and location details</li>
-          <li>Menu, pricing, and meal package information for easy comparison</li>
-          <li>Student reviews and ratings to support informed decisions</li>
-          <li>Responsive UI optimized for mobile and desktop devices</li>
-          <li>Scalable backend architecture supporting CRUD operations</li>
-        </ul>
-        <p class="status">Tech Stack: React, Node.js, Express, MongoDB</p>
-        <p class="status">Status: In Progress</p>
-      </div>
-
-      <div class="card">
-        <h3>Civix (CleanStreet) – Civic Issue Reporting & Tracking Platform</h3>
-        <p>
-          A civic engagement web application that enables users to report, track, and monitor local public
-          issues such as garbage dumps, potholes, water leakage, and broken streetlights.
-        </p>
-        <ul>
-          <li>User authentication with role-based access (User, Volunteer, Admin)</li>
-          <li>Complaint submission with description, image upload, and map-based location</li>
-          <li>Real-time complaint status tracking (Received, In Review, Resolved)</li>
-          <li>Community voting and comment system to prioritize issues</li>
-          <li>Admin dashboard for complaint monitoring and reporting</li>
-        </ul>
-        <p class="status">Tech Stack: HTML, CSS, JavaScript, Node.js, Express</p>
-      </div>
-    </div>
-  </section>
-  <!-- EXPERIENCE -->
-  <section class="section">
-    <div class="section-inner">
-      <h2>Experience</h2>
-
-      <div class="card">
-        <h3>CleanStreet – Civic Issue Reporting & Tracking Application</h3>
-        <p>
-          CleanStreet is a civic engagement web application designed to help citizens report,
-          track, and resolve local public issues such as garbage dumps, potholes, water leakage,
-          and broken streetlights using location-based reporting.
+  <main id="home">
+    <section class="hero container section-animate">
+      <div class="hero-content">
+        <p class="pill">Full-Stack Intern Portfolio</p>
+        <h1> Yaswanth Reddy Dondeti</h1>
+        <p class="hero-copy">
+          Full-Stack Developer in training and B.Tech Computer Science student building practical web products using
+          React, Node.js, Express, and MongoDB. Focused on responsive frontend delivery, scalable backend systems,
+          and real-world civic and student-focused problem solving.
+          <span class="soft-highlight">I leverage AI-assisted workflows to ship faster while maintaining high accuracy and quality.</span>
         </p>
 
+        <div class="hero-meta">
+          <span>Andhra Pradesh, India</span>
+          <span>+91 9347633162</span>
+          <a href="mailto:reddyyaswanth1559@gmail.com">reddyyaswanth1559@gmail.com</a>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-resume" href="#" id="downloadResumeBtn" role="button">Download Resume</a>
+          <a class="btn btn-solid" href="https://github.com/yaswanth-reddy14" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/yaswanthreddy-dondeti-b92625264/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-tile">
+            <strong>2+</strong>
+            <span>Full-Stack Projects</span>
+          </div>
+          <div class="stat-tile">
+            <strong>9+</strong>
+            <span>Certifications</span>
+          </div>
+          <div class="stat-tile">
+            <strong>2026</strong>
+            <span>B.Tech Graduation</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-wrap">
+        <div class="profile-ring"></div>
+        <div class="profile-card tilt-card">
+          <img src="assets/profile.jpg" alt="Dondeti Yaswanth Reddy" class="profile-photo" />
+          <div class="profile-caption">
+            <strong>Yaswanth Reddy</strong>
+            <span>Full-Stack Intern Candidate</span>
+          </div>
+        </div>
+        
+      </aside>
+    </section>
+
+    <section id="value" class="container section section-animate">
+      <div class="section-head">
+        <h2>Why I Add Value</h2>
+      </div>
+      <div class="grid cards-3 value-cards">
+        <article class="card tilt-card">
+          <h3>Problem-First Building</h3>
+          <p>I focus on practical problems students and communities face, then design simple digital workflows that solve them clearly.</p>
+        </article>
+        <article class="card tilt-card">
+          <h3>Full-Stack Delivery</h3>
+          <p>From responsive frontend to backend APIs and data modeling, I can build complete features end-to-end with ownership.</p>
+        </article>
+        <article class="card tilt-card">
+          <h3>Growth Mindset</h3>
+          <p>I learn fast, ship iterations, and improve based on feedback.
+          <span class="soft-highlight">I also apply AI-assisted workflows to improve speed, consistency, and execution quality.</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="container section section-animate">
+      <div class="section-head">
+        <h2>Internship Experience</h2>
+      </div>
+      <article class="timeline-item card tilt-card">
+        <h3>Infosys Springboard Internship 6.0</h3>
+        <p class="meta">Project: Civix Civic Issue Reporting and Tracking App | Full-Stack Intern</p>
         <ul>
-          <li>Designed and implemented complaint reporting with image upload and map-based location selection</li>
-          <li>Built role-based access for users, volunteers, and administrators</li>
-          <li>Implemented real-time complaint status tracking and updates</li>
-          <li>Developed community voting and comment features to prioritize issues</li>
-          <li>Created an admin dashboard for monitoring complaints and managing users</li>
+          <li>Developed a full-stack civic platform to report and monitor public issues like potholes, garbage, and water leaks.</li>
+          <li>Implemented role-based authentication for users, volunteers, and admins with secure complaint routing.</li>
+          <li>Built location-aware issue reporting with map integration and image uploads for accurate tracking.</li>
+          <li>Designed voting and commenting features to prioritize high-impact community issues.</li>
+          <li>Created an admin dashboard for analytics, complaint status workflow, and activity monitoring.</li>
         </ul>
+        <div class="card-actions">
+          <a class="project-link" href="https://github.com/yaswanth-reddy14/Civix-Civic-Issue-Reporting-and-Tracking-App.git" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </div>
+      </article>
+    </section>
 
-        <p class="status">Role: Full-Stack Developer & System Designer</p>
+    <section id="projects" class="container section section-animate">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
       </div>
+      <div class="project-filters" role="tablist" aria-label="Project filters">
+        <button class="filter-btn is-active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" type="button" data-filter="cloud">Cloud</button>
+      </div>
+      <div id="projectGrid" class="grid cards-2">
+        <article class="card tilt-card project-item" data-tags="fullstack">
+          <h3>Mess Directory Web Application</h3>
+          <p class="meta">React, Node.js, Express, MongoDB | Full-Stack Project</p>
+          <p>A full-stack platform built for students in hostels or rented rooms to quickly find affordable and reliable nearby mess services.</p>
+          <ul>
+            <li>Created searchable listings with mess location details, menu visibility, and pricing information.</li>
+            <li>Included student reviews and ratings to support informed meal plan decisions.</li>
+            <li>Built package and contact sections to help users compare plans and connect with providers quickly.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="project-link" href="https://github.com/yaswanth-reddy14/Mess_Cards.git" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a class="project-link project-link-live" href="https://mess-cards-xyrg.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+          <button class="link-btn" type="button" data-modal-target="modal-mess">View Case Study</button>
+        </article>
+
+        <article class="card tilt-card project-item" data-tags="cloud">
+          <h3>Smart Photo Search</h3>
+          <p class="meta">AWS Cloud Services, Python</p>
+          <p>Cloud-based application for image discovery using auto-generated tags and structured storage.</p>
+          <ul>
+            <li>Integrated cloud storage and metadata flow for searchable image retrieval.</li>
+            <li>Implemented basic auto-tagging pipeline to improve search quality.</li>
+            <li>Built end-to-end understanding of cloud application deployment patterns.</li>
+          </ul>
+          <button class="link-btn" type="button" data-modal-target="modal-photo">View Case Study</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container section section-animate">
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
+      <div class="skill-groups">
+        <div class="skill-group card tilt-card">
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript, React.js, Responsive Design, Basic Wireframing</p>
+        </div>
+        <div class="skill-group card tilt-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, Python, C++, REST APIs</p>
+        </div>
+        <div class="skill-group card tilt-card">
+          <h3>Databases</h3>
+          <p>MongoDB, MySQL</p>
+        </div>
+        <div class="skill-group card tilt-card">
+          <h3>Cloud and Tools</h3>
+          <p>AWS Basics, Git, GitHub, Postman, MongoDB Atlas, Tableau Basics, Power BI Basics</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="education" class="container section section-animate">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <div class="grid cards-2">
+        <article class="card tilt-card">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p class="meta">Gayatri Vidya Parishad College of Engineering, Visakhapatnam</p>
+          <p>2022 - 2026</p>
+        </article>
+        <article class="card tilt-card">
+          <h3>Higher Secondary (MPC)</h3>
+          <p class="meta">Bhashyam Junior College, Guntur</p>
+          <p>2020 - 2022</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section section-animate">
+      <div class="section-head">
+        <h2>Certifications</h2>
+      </div>
+      <div class="grid cards-3 certs">
+        <div class="mini-card card tilt-card">Front End Web Developer - Infosys Springboard</div>
+        <div class="mini-card card tilt-card">Design and Implementation of HCI - NPTEL Elite</div>
+        <div class="mini-card card tilt-card">Fundamentals of C++ - IBM</div>
+        <div class="mini-card card tilt-card">Data Analytics Job Simulation - Deloitte</div>
+        <div class="mini-card card tilt-card">Introduction to Packet Tracer - Cisco Networking Academy</div>
+        <div class="mini-card card tilt-card">Python Essentials 1 and 2 - Cisco Networking Academy</div>
+        <div class="mini-card card tilt-card">Salesforce Developer Virtual Internship</div>
+        <div class="mini-card card tilt-card">ServiceNow Certified Application Developer (CAD)</div>
+        <div class="mini-card card tilt-card">ServiceNow Certified System Administrator (CSA)</div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section section-animate">
+      <div class="section-head">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-layout">
+        <article class="card contact-copy tilt-card">
+          <h3>Recruiter and Hiring Team Inquiries</h3>
+          <p>If my profile matches your Full-Stack Intern requirements, send a direct message here.</p>
+          <ul>
+            <li>Best for internship opportunities and project collaborations.</li>
+            <li>Response channel: your email inbox and my email inbox.</li>
+            <li>Location: Andhra Pradesh, India.</li>
+          </ul>
+          <div class="card-actions">
+            <a class="project-link" href="mailto:reddyyaswanth1559@gmail.com">Email Directly</a>
+            <a class="project-link" href="tel:+919347633162">Call</a>
+          </div>
+        </article>
+
+        <form id="contactForm" class="card contact-form tilt-card" action="https://formspree.io/f/xkoveyjb" method="POST">
+          <input class="hidden-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+          <input type="hidden" name="_subject" value="New Portfolio Inquiry - Yaswanth Reddy" />
+
+          <div class="form-grid">
+            <label class="form-group">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label class="form-group">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </label>
+          </div>
+
+          <label class="form-group">
+            <span>Company</span>
+            <input type="text" name="company" placeholder="Company name" />
+          </label>
+
+          <label class="form-group">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about the role, project, or collaboration." required></textarea>
+          </label>
+
+          <button class="btn btn-solid contact-submit" type="submit">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+          <p class="form-help">Direct messages are enabled via Formspree.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Open to Full-Stack Intern opportunities and collaborative product development work.</p>
+      <p>Volunteer: We Are For Help Social Club | Languages: English, Telugu</p>
     </div>
-  </section>
+  </footer>
 
-  <!-- CERTIFICATIONS -->
-  <!-- CERTIFICATIONS -->
-<section class="section">
-  <div class="section-inner">
-    <h2>Certifications</h2>
+  <div class="quick-actions" aria-label="Quick actions">
+    <button id="copyEmailBtn" type="button">Copy Email</button>
+    <button id="copyPhoneBtn" type="button">Copy Phone</button>
+    <button id="downloadVcardBtn" type="button">Download vCard</button>
+  </div>
 
-    <div class="cert-grid">
-      <div class="cert-card">
-        <h3>Front End Web Developer</h3>
-        <p class="issuer">Infosys Springboard</p>
+  <div id="commandPalette" class="command-backdrop" aria-hidden="true">
+    <div class="command-box" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <input id="commandInput" type="text" placeholder="Quick navigation..." />
+      <div class="command-list">
+        <button class="command-item" type="button" data-target="#value">Go to Value</button>
+        <button class="command-item" type="button" data-target="#projects">Go to Projects</button>
+        <button class="command-item" type="button" data-target="#experience">Go to Experience</button>
+        <button class="command-item" type="button" data-target="#skills">Go to Skills</button>
+        <button class="command-item" type="button" data-target="#contact">Go to Contact</button>
       </div>
+      <p class="command-help">Tip: press <code>Esc</code> to close.</p>
+    </div>
+  </div>
 
-      <div class="cert-card">
-        <h3>Design & Implementation of HCI</h3>
-        <p class="issuer">NPTEL (Elite Certification)</p>
-      </div>
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top">Top</button>
 
-      <div class="cert-card">
-        <h3>Fundamentals of C++</h3>
-        <p class="issuer">IBM</p>
-      </div>
-
-      <div class="cert-card">
-        <h3>Data Analytics Job Simulation</h3>
-        <p class="issuer">Deloitte</p>
-      </div>
-
-      <div class="cert-card">
-        <h3>Introduction to Packet Tracer</h3>
-        <p class="issuer">Cisco Networking Academy</p>
-      </div>
-
-      <div class="cert-card">
-        <h3>ServiceNow Certified System Administrator (CSA)</h3>
-        <p class="issuer">ServiceNow</p>
-      </div>
-
-      <div class="cert-card">
-        <h3>ServiceNow Certified Application Developer (CAD)</h3>
-        <p class="issuer">ServiceNow</p>
+  <div class="modal-backdrop" id="modal-mess" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Mess Directory Case Study">
+      <button class="modal-close" type="button" data-modal-close>Close</button>
+      <h3>Mess Directory Case Study</h3>
+      <p><strong>Problem:</strong> Many students living in hostels or renting rooms near their institutions face difficulties cooking regularly, while daily food ordering becomes expensive.</p>
+      <p><strong>Solution:</strong> Built a dedicated Mess Directory web page as a centralized platform to discover nearby mess options with complete decision-making information.</p>
+      <p><strong>Core Features:</strong></p>
+      <ul>
+        <li>Searchable list of nearby messes with location details and ratings.</li>
+        <li>Daily or weekly menu visibility with transparent pricing and package options.</li>
+        <li>Student review and rating system for better trust and comparison.</li>
+        <li>Meal plan/package information for different budgets from breakfast to dinner.</li>
+        <li>Contact details and directions for easy access to mess operators.</li>
+      </ul>
+      <p><strong>Impact:</strong> Helps students find affordable and convenient meal options quickly while also helping local messes attract more customers and build a stronger local community.</p>
+      <div class="modal-actions">
+        <a class="project-link" href="https://github.com/yaswanth-reddy14/Mess_Cards.git" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        <a class="project-link project-link-live" href="https://mess-cards-xyrg.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
     </div>
   </div>
-</section>
-  <!-- CONTACT -->
-  <footer>
-    <h2>Contact</h2>
-    <p>Email: reddyyaswanth1559@gmail.com</p>
-    <p>Phone: 9347633162</p>
-    <p>Location: Andhra Pradesh, India</p>
-  </footer>
 
+  <div class="modal-backdrop" id="modal-photo" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Smart Photo Search Case Study">
+      <button class="modal-close" type="button" data-modal-close>Close</button>
+      <h3>Smart Photo Search Case Study</h3>
+      <p><strong>Problem:</strong> Large photo collections are hard to search manually.</p>
+      <p><strong>Solution:</strong> Combined cloud storage with metadata tagging to enable searchable image retrieval.</p>
+      <p><strong>Impact:</strong> Demonstrated end-to-end cloud workflow design and practical search experience improvements.</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.16 });
+    document.querySelectorAll(".section-animate").forEach((el) => observer.observe(el));
+
+    const navLinks = [...document.querySelectorAll('.topbar nav a[href^="#"]')];
+    const trackedSections = navLinks
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.getAttribute("id");
+        navLinks.forEach((link) => {
+          const isMatch = link.getAttribute("href") === `#${id}`;
+          link.classList.toggle("active-link", isMatch);
+        });
+      });
+    }, { threshold: 0.45, rootMargin: "-15% 0px -35% 0px" });
+    trackedSections.forEach((section) => sectionObserver.observe(section));
+
+    const html = document.documentElement;
+    const themeToggle = document.getElementById("themeToggle");
+    const availabilityBadge = document.getElementById("availabilityBadge");
+    const availabilityLabel = document.getElementById("availabilityLabel");
+    const availabilityTime = document.getElementById("availabilityTime");
+    const savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme) html.setAttribute("data-theme", savedTheme);
+    themeToggle.textContent = html.getAttribute("data-theme") === "dark" ? "Dark" : "Light";
+
+    themeToggle.addEventListener("click", () => {
+      const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      html.setAttribute("data-theme", next);
+      localStorage.setItem("portfolio-theme", next);
+      themeToggle.textContent = next === "dark" ? "Dark" : "Light";
+    });
+
+    const getHourInIST = () => {
+      const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        hour12: false
+      }).formatToParts(new Date());
+      const hourPart = parts.find((part) => part.type === "hour");
+      return Number(hourPart?.value || 0);
+    };
+
+    const updateAvailabilityBadge = () => {
+      if (!availabilityBadge || !availabilityTime || !availabilityLabel) return;
+      const istTime = new Intl.DateTimeFormat("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+      }).format(new Date());
+
+      const hour = getHourInIST();
+      const likelyOnline = hour >= 9 && hour < 22;
+      availabilityBadge.classList.toggle("is-away", !likelyOnline);
+      availabilityLabel.textContent = likelyOnline
+        ? "Open to Internship & Full-Time Roles (Online)"
+        : "Open to Internship & Full-Time Roles (Replies Soon)";
+      availabilityTime.textContent = `IST ${istTime}`;
+    };
+
+    updateAvailabilityBadge();
+    setInterval(updateAvailabilityBadge, 30000);
+
+    const toTop = document.getElementById("toTop");
+    const scrollBar = document.getElementById("scrollBar");
+    window.addEventListener("scroll", () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
+      if (scrollBar) scrollBar.style.width = `${progress}%`;
+      toTop.classList.toggle("show", window.scrollY > 500);
+    }, { passive: true });
+    window.dispatchEvent(new Event("scroll"));
+    toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    const filterButtons = [...document.querySelectorAll(".filter-btn")];
+    const projectItems = [...document.querySelectorAll(".project-item")];
+    const applyProjectFilter = (filter) => {
+      projectItems.forEach((item) => {
+        const tags = (item.dataset.tags || "").split(" ");
+        const isVisible = filter === "all" || tags.includes(filter);
+        item.classList.toggle("is-hidden", !isVisible);
+      });
+      filterButtons.forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.filter === filter);
+      });
+    };
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => applyProjectFilter(btn.dataset.filter || "all"));
+    });
+    applyProjectFilter("all");
+
+    const pulseButtonText = (button, message) => {
+      if (!button) return;
+      const original = button.textContent;
+      button.textContent = message;
+      setTimeout(() => { button.textContent = original; }, 1200);
+    };
+
+    const copyToClipboard = async (text) => {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (e) {
+        try {
+          const area = document.createElement("textarea");
+          area.value = text;
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand("copy");
+          document.body.removeChild(area);
+          return true;
+        } catch (err) {
+          return false;
+        }
+      }
+    };
+
+    const copyEmailBtn = document.getElementById("copyEmailBtn");
+    const copyPhoneBtn = document.getElementById("copyPhoneBtn");
+    const downloadVcardBtn = document.getElementById("downloadVcardBtn");
+
+    if (copyEmailBtn) {
+      copyEmailBtn.addEventListener("click", async () => {
+        const ok = await copyToClipboard("reddyyaswanth1559@gmail.com");
+        pulseButtonText(copyEmailBtn, ok ? "Email Copied" : "Copy Failed");
+      });
+    }
+    if (copyPhoneBtn) {
+      copyPhoneBtn.addEventListener("click", async () => {
+        const ok = await copyToClipboard("+91 9347633162");
+        pulseButtonText(copyPhoneBtn, ok ? "Phone Copied" : "Copy Failed");
+      });
+    }
+    if (downloadVcardBtn) {
+      downloadVcardBtn.addEventListener("click", () => {
+        const vcard = [
+          "BEGIN:VCARD",
+          "VERSION:3.0",
+          "N:Reddy;Yaswanth;;;",
+          "FN:Yaswanth Reddy Dondeti",
+          "TITLE:Full-Stack Intern Candidate",
+          "TEL;TYPE=CELL:+919347633162",
+          "EMAIL;TYPE=INTERNET:reddyyaswanth1559@gmail.com",
+          "ADR;TYPE=HOME:;;Andhra Pradesh;;;India",
+          "URL:https://github.com/yaswanth-reddy14",
+          "URL:https://www.linkedin.com/in/yaswanthreddy-dondeti-b92625264/",
+          "END:VCARD"
+        ].join("\n");
+        const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = "Yaswanth_Reddy_Contact.vcf";
+        anchor.click();
+        URL.revokeObjectURL(url);
+        pulseButtonText(downloadVcardBtn, "vCard Saved");
+      });
+    }
+
+    const spotlight = document.querySelector(".spotlight");
+    const dot = document.querySelector(".cursor-dot");
+    const ring = document.querySelector(".cursor-ring");
+    window.addEventListener("mousemove", (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      document.body.style.setProperty("--mx", `${x}px`);
+      document.body.style.setProperty("--my", `${y}px`);
+      dot.style.transform = `translate(${x}px, ${y}px)`;
+      ring.style.transform = `translate(${x}px, ${y}px)`;
+      spotlight.style.opacity = 1;
+    });
+
+    document.querySelectorAll("a, button, .card, input, textarea").forEach((el) => {
+      el.addEventListener("mouseenter", () => ring.classList.add("cursor-active"));
+      el.addEventListener("mouseleave", () => ring.classList.remove("cursor-active"));
+    });
+
+    document.querySelectorAll(".tilt-card").forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const px = (e.clientX - rect.left) / rect.width;
+        const py = (e.clientY - rect.top) / rect.height;
+        const rx = (0.5 - py) * 6;
+        const ry = (px - 0.5) * 8;
+        card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;
+      });
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+    });
+
+    const openers = document.querySelectorAll("[data-modal-target]");
+    const closers = document.querySelectorAll("[data-modal-close]");
+    function closeAllModals() {
+      document.querySelectorAll(".modal-backdrop").forEach((m) => {
+        m.classList.remove("open");
+        m.setAttribute("aria-hidden", "true");
+      });
+      document.body.classList.remove("modal-open");
+    }
+
+    openers.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const modal = document.getElementById(btn.dataset.modalTarget);
+        if (!modal) return;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+      });
+    });
+
+    closers.forEach((btn) => btn.addEventListener("click", closeAllModals));
+    document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+      backdrop.addEventListener("click", (e) => {
+        if (e.target === backdrop) closeAllModals();
+      });
+    });
+
+    const commandPalette = document.getElementById("commandPalette");
+    const commandInput = document.getElementById("commandInput");
+    const commandItems = [...document.querySelectorAll(".command-item")];
+
+    const openCommandPalette = () => {
+      if (!commandPalette) return;
+      commandPalette.classList.add("open");
+      commandPalette.setAttribute("aria-hidden", "false");
+      if (commandInput) {
+        commandInput.value = "";
+        commandItems.forEach((item) => { item.style.display = ""; });
+        setTimeout(() => commandInput.focus(), 0);
+      }
+    };
+
+    const closeCommandPalette = () => {
+      if (!commandPalette) return;
+      commandPalette.classList.remove("open");
+      commandPalette.setAttribute("aria-hidden", "true");
+    };
+
+    if (commandInput) {
+      commandInput.addEventListener("input", () => {
+        const q = commandInput.value.toLowerCase().trim();
+        commandItems.forEach((item) => {
+          const show = item.textContent.toLowerCase().includes(q);
+          item.style.display = show ? "" : "none";
+        });
+      });
+    }
+
+    commandItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        const target = item.dataset.target;
+        const section = target ? document.querySelector(target) : null;
+        if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+        closeCommandPalette();
+      });
+    });
+
+    if (commandPalette) {
+      commandPalette.addEventListener("click", (e) => {
+        if (e.target === commandPalette) closeCommandPalette();
+      });
+    }
+
+    window.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        openCommandPalette();
+        return;
+      }
+      if (e.key === "Escape") {
+        closeAllModals();
+        closeCommandPalette();
+      }
+    });
+
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+    if (contactForm && formStatus) {
+      const setFormStatus = (message, type) => {
+        formStatus.textContent = message;
+        formStatus.classList.remove("is-success", "is-error", "is-info");
+        formStatus.classList.add(`is-${type}`);
+      };
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const endpoint = contactForm.getAttribute("action") || "";
+        if (!endpoint.includes("formspree.io/f/")) {
+          setFormStatus("Form endpoint is not configured correctly.", "error");
+          return;
+        }
+
+        setFormStatus("Sending message...", "info");
+        const formData = new FormData(contactForm);
+        try {
+          const response = await fetch(endpoint, {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json"
+            }
+          });
+
+          if (response.ok) {
+            setFormStatus("Message sent successfully. Thank you.", "success");
+            contactForm.reset();
+          } else {
+            setFormStatus("Message could not be sent right now. Please try again.", "error");
+          }
+        } catch (error) {
+          setFormStatus("Network error. Please try again in a moment.", "error");
+        }
+      });
+    }
+
+    const normalizeText = (value) => (value || "").replace(/\s+/g, " ").trim();
+    const getList = (selector) => [...document.querySelectorAll(selector)].map((el) => normalizeText(el.textContent)).filter(Boolean);
+
+    function collectResumeData() {
+      const projects = [...document.querySelectorAll("#projects .card")].map((card) => ({
+        title: normalizeText(card.querySelector("h3")?.textContent),
+        meta: normalizeText(card.querySelector(".meta")?.textContent),
+        points: [...card.querySelectorAll("li")].map((li) => normalizeText(li.textContent)).filter(Boolean)
+      }));
+
+      const skills = [...document.querySelectorAll("#skills .skill-group")].map((group) => ({
+        title: normalizeText(group.querySelector("h3")?.textContent),
+        detail: normalizeText(group.querySelector("p")?.textContent)
+      }));
+
+      const education = [...document.querySelectorAll("#education .card")].map((card) => ({
+        degree: normalizeText(card.querySelector("h3")?.textContent),
+        place: normalizeText(card.querySelector(".meta")?.textContent),
+        duration: normalizeText(card.querySelector("p:last-of-type")?.textContent)
+      }));
+
+      return {
+        name: normalizeText(document.querySelector(".hero h1")?.textContent),
+        headline: "Full-Stack Intern Portfolio",
+        summary: normalizeText(document.querySelector(".hero-copy")?.textContent),
+        contact: {
+          location: normalizeText(document.querySelector(".hero-meta span:nth-child(1)")?.textContent),
+          phone: normalizeText(document.querySelector(".hero-meta span:nth-child(2)")?.textContent),
+          email: normalizeText(document.querySelector(".hero-meta a")?.textContent),
+          github: "github.com/yaswanth-reddy14",
+          linkedin: "linkedin.com/in/yaswanthreddy-dondeti-b92625264"
+        },
+        experienceTitle: normalizeText(document.querySelector("#experience h3")?.textContent),
+        experienceMeta: normalizeText(document.querySelector("#experience .meta")?.textContent),
+        experiencePoints: getList("#experience li"),
+        projects,
+        skills,
+        education,
+        certifications: getList(".certs .mini-card")
+      };
+    }
+
+    function downloadTextResume(data) {
+      const lines = [];
+      lines.push(data.name);
+      lines.push(data.headline);
+      lines.push(`${data.contact.location} | ${data.contact.phone} | ${data.contact.email}`);
+      lines.push(`GitHub: ${data.contact.github} | LinkedIn: ${data.contact.linkedin}`);
+      lines.push("");
+      lines.push("PROFESSIONAL SUMMARY");
+      lines.push(data.summary);
+      lines.push("");
+      lines.push("EXPERIENCE");
+      lines.push(data.experienceTitle);
+      lines.push(data.experienceMeta);
+      data.experiencePoints.forEach((item) => lines.push(`- ${item}`));
+      lines.push("");
+      lines.push("PROJECTS");
+      data.projects.forEach((project) => {
+        lines.push(project.title);
+        lines.push(project.meta);
+        project.points.forEach((item) => lines.push(`- ${item}`));
+        lines.push("");
+      });
+      lines.push("SKILLS");
+      data.skills.forEach((item) => lines.push(`${item.title}: ${item.detail}`));
+      lines.push("");
+      lines.push("EDUCATION");
+      data.education.forEach((item) => lines.push(`${item.degree} | ${item.place} | ${item.duration}`));
+      lines.push("");
+      lines.push("CERTIFICATIONS");
+      data.certifications.forEach((item) => lines.push(`- ${item}`));
+
+      const blob = new Blob([lines.join("\n")], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "Yaswanth_Reddy_Resume.txt";
+      anchor.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function generatePdfResume(data) {
+      if (!window.jspdf || !window.jspdf.jsPDF) {
+        throw new Error("jsPDF unavailable");
+      }
+
+      const trimWords = (text, maxWords) => {
+        const words = normalizeText(text).split(" ");
+        if (words.length <= maxWords) return normalizeText(text);
+        return `${words.slice(0, maxWords).join(" ")}...`;
+      };
+
+      const atsData = {
+        ...data,
+        summary: trimWords(data.summary, 56),
+        experiencePoints: data.experiencePoints.slice(0, 4),
+        projects: data.projects.slice(0, 2).map((project) => ({
+          ...project,
+          points: project.points.slice(0, 2)
+        })),
+        certifications: data.certifications.slice(0, 6)
+      };
+
+      const doc = new window.jspdf.jsPDF({ unit: "pt", format: "a4" });
+      const pageWidth = doc.internal.pageSize.getWidth();
+      const pageHeight = doc.internal.pageSize.getHeight();
+      const margin = 34;
+      const maxY = pageHeight - margin;
+      const contentWidth = pageWidth - margin * 2;
+      let y = margin;
+
+      doc.setTextColor(0, 0, 0);
+      doc.setDrawColor(70, 70, 70);
+
+      const canFit = (height) => y + height <= maxY;
+
+      const writeWrapped = (text, options = {}) => {
+        const {
+          size = 10,
+          weight = "normal",
+          indent = 0,
+          gap = 3
+        } = options;
+
+        const lh = size + 2;
+        doc.setFont("helvetica", weight);
+        doc.setFontSize(size);
+        const lines = doc.splitTextToSize(normalizeText(text), contentWidth - indent);
+        const need = lines.length * lh + gap;
+        if (!canFit(need)) return false;
+        doc.text(lines, margin + indent, y);
+        y += lines.length * lh + gap;
+        return true;
+      };
+
+      const writeSection = (title) => {
+        const sectionHeight = 18;
+        if (!canFit(sectionHeight)) return false;
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(10.2);
+        doc.text(title.toUpperCase(), margin, y);
+        y += 8;
+        doc.line(margin, y, pageWidth - margin, y);
+        y += 8;
+        return true;
+      };
+
+      writeWrapped(atsData.name, { size: 21, weight: "bold", gap: 5 });
+      writeWrapped("Full-Stack Intern", { size: 11, weight: "bold", gap: 4 });
+      writeWrapped(`${atsData.contact.location} | ${atsData.contact.phone} | ${atsData.contact.email}`, { size: 9.2, gap: 2 });
+      writeWrapped(`${atsData.contact.github} | ${atsData.contact.linkedin}`, { size: 9.2, gap: 8 });
+
+      if (writeSection("Professional Summary")) {
+        writeWrapped(atsData.summary, { size: 9.8, gap: 8 });
+      }
+
+      if (writeSection("Experience")) {
+        writeWrapped(atsData.experienceTitle, { size: 10.3, weight: "bold", gap: 2 });
+        writeWrapped(atsData.experienceMeta, { size: 9.4, gap: 4 });
+        atsData.experiencePoints.forEach((point) => {
+          writeWrapped(`- ${point}`, { size: 9.6, indent: 4, gap: 2 });
+        });
+        y += 4;
+      }
+
+      if (writeSection("Projects")) {
+        atsData.projects.forEach((project) => {
+          writeWrapped(project.title, { size: 10.1, weight: "bold", gap: 2 });
+          if (project.meta) {
+            writeWrapped(project.meta, { size: 9.3, gap: 3 });
+          }
+          project.points.forEach((point) => {
+            writeWrapped(`- ${point}`, { size: 9.5, indent: 4, gap: 2 });
+          });
+          y += 3;
+        });
+      }
+
+      if (writeSection("Skills")) {
+        atsData.skills.forEach((skill) => {
+          writeWrapped(`${skill.title}: ${skill.detail}`, { size: 9.4, gap: 2 });
+        });
+        y += 4;
+      }
+
+      if (writeSection("Education")) {
+        atsData.education.forEach((item) => {
+          writeWrapped(`${item.degree} | ${item.place} | ${item.duration}`, { size: 9.5, gap: 2 });
+        });
+        y += 4;
+      }
+
+      if (writeSection("Certifications")) {
+        atsData.certifications.forEach((cert) => {
+          writeWrapped(`- ${cert}`, { size: 9.3, indent: 4, gap: 2 });
+        });
+      }
+
+      doc.save("Yaswanth_Reddy_Resume_ATS_OnePage.pdf");
+    }
+
+    const downloadResumeBtn = document.getElementById("downloadResumeBtn");
+    if (downloadResumeBtn) {
+      downloadResumeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const data = collectResumeData();
+        try {
+          generatePdfResume(data);
+        } catch (error) {
+          downloadTextResume(data);
+        }
+      });
+    }
+  </script>
 </body>
 </html>
